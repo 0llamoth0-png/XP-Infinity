@@ -8,7 +8,7 @@ public class MovimientoVagon : MonoBehaviour
 
         if (transform.position.x <=-160)
         {
-            transform.position = new Vector3 (83, 0, 0);
+            transform.position = new Vector3 (164, 0, 0);
         }
     }
 }

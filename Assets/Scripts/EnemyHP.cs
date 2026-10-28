@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class EnemyHP : MonoBehaviour
 {
-    [SerializeField] int vida = 3;
+    [SerializeField] int vida = 1;
 
     public void TakeDamage(int cantidad)
     {
