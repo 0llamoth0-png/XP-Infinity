@@ -237,6 +237,7 @@ GameObject:
   - component: {fileID: 8964623256628788142}
   - component: {fileID: 7775818360425859006}
   - component: {fileID: 8223346338665167115}
+  - component: {fileID: 8460024705543967881}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -498,6 +499,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   vida: 3
+  heartSprites:
+  - {fileID: 498278486, guid: 0e80a5646ee7ee64f8dbaa21d65c1700, type: 3}
+  - {fileID: -1760928191, guid: 0e80a5646ee7ee64f8dbaa21d65c1700, type: 3}
+  - {fileID: 157314822, guid: 0e80a5646ee7ee64f8dbaa21d65c1700, type: 3}
 --- !u!114 &8964623256628788142
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -545,3 +550,16 @@ MonoBehaviour:
   enemyLayer:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &8460024705543967881
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5194971993061686297}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8c686bfe427a304fa4be33c8a5f73b0, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  kills: 0

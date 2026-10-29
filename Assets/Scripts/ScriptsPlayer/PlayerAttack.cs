@@ -9,7 +9,16 @@ public class PlayerAttack : MonoBehaviour
     [SerializeField, Min(0.1f)] float projectileSize = 0.6f;
     [SerializeField] LayerMask enemyLayer = ~0;
 
+    [SerializeField] AudioClip shootClip;
+      [SerializeField] AudioSource source;
+
+    PlayerProtect playerProtect;
     float nextAttackTime;
+
+    void Awake()
+    {
+        playerProtect = GetComponent<PlayerProtect>();
+    }
 
     public bool TryAttack()
     {
@@ -23,7 +32,7 @@ public class PlayerAttack : MonoBehaviour
 
     public bool TryAttack(Vector3 aimPoint)
     {
-        if (Time.time < nextAttackTime)
+        if ((playerProtect != null && playerProtect.IsProtecting) || Time.time < nextAttackTime)
         {
             return false;
         }
@@ -53,6 +62,7 @@ public class PlayerAttack : MonoBehaviour
         projectile.transform.position = transform.position + Vector3.up * 0.5f;
         projectile.transform.rotation = Quaternion.LookRotation(direction);
         projectile.transform.localScale = Vector3.one * projectileSize;
+        source.PlayOneShot(shootClip);
         projectile.GetComponent<Renderer>().material.color = Color.cyan;
         Destroy(projectile.GetComponent<Collider>());
 

@@ -1,0 +1,621 @@
+fileFormatVersion: 2
+guid: 99e6fbf3578d7d8458b27618b5dd66a5
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: BOTONES_5
+      rect:
+        serializedVersion: 2
+        x: 3017
+        y: 1917
+        width: 2551
+        height: 1316
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d4e0a6d5f8f0e9439a3f1e613e99582
+      internalID: 1582994855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOTONES_9
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 2749
+        width: 1260
+        height: 364
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27c5d388017fad241b2fb5172b44444b
+      internalID: 196220789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOTONES_16
+      rect:
+        serializedVersion: 2
+        x: 838
+        y: 2314
+        width: 1224
+        height: 364
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9afd604db26dfe64db786577bcb60b9b
+      internalID: 1912385428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOTONES_23
+      rect:
+        serializedVersion: 2
+        x: 1172
+        y: 1901
+        width: 1238
+        height: 367
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a5b9a4cea0ad4e478399ada9ebcda66
+      internalID: 932368700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOTONES_27
+      rect:
+        serializedVersion: 2
+        x: 7023
+        y: 3025
+        width: 276
+        height: 357
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4b5cb3024d52ad4cbb2221f2b2977bc
+      internalID: -418314589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOTONES_28
+      rect:
+        serializedVersion: 2
+        x: 7348
+        y: 3036
+        width: 245
+        height: 344
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 642a09edca3d9ce428f6c3cacd18c8e8
+      internalID: -686024444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOTONES_30
+      rect:
+        serializedVersion: 2
+        x: 1617
+        y: 1496
+        width: 1220
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9cebd380d9e4f649b2d8db9b6b54a6f
+      internalID: -373046695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOTONES_31
+      rect:
+        serializedVersion: 2
+        x: 5714
+        y: 1604
+        width: 624
+        height: 296
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 351c3609e25e451489e751e419cace3b
+      internalID: -2012133080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOTONES_32
+      rect:
+        serializedVersion: 2
+        x: 6299
+        y: 2838
+        width: 534
+        height: 695
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 368501291d11aad4c98529e8093d19c6
+      internalID: 550057546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOTONES_33
+      rect:
+        serializedVersion: 2
+        x: 5769
+        y: 2096
+        width: 847
+        height: 567
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 061175c9782a3a842aa875f1a4308fc3
+      internalID: -1923788401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOTONES_36
+      rect:
+        serializedVersion: 2
+        x: 5635
+        y: 2846
+        width: 574
+        height: 687
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 423082942963df8409e13b7a4e536258
+      internalID: 16344418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOTONES_39
+      rect:
+        serializedVersion: 2
+        x: 1763
+        y: 1033
+        width: 1080
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e1752cbfe0128d49b688d0114ce549e
+      internalID: 1164302537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOTONES_43
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 978
+        width: 1135
+        height: 324
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06c85d96581ded841855da79ddd050bd
+      internalID: -1914056579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOTONES_45
+      rect:
+        serializedVersion: 2
+        x: 1724
+        y: 609
+        width: 1080
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7af8e6f01cc131c4c93523c3dec28eba
+      internalID: 1068007291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOTONES_46
+      rect:
+        serializedVersion: 2
+        x: 3302
+        y: 833
+        width: 1080
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bdc9ade209286944a6517ff33037df0
+      internalID: -1834193192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOTONES_48
+      rect:
+        serializedVersion: 2
+        x: 4684
+        y: 0
+        width: 1947
+        height: 1307
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: feea69b902bc85c47922996025e64d8b
+      internalID: -1066348894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOTONES_50
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 533
+        width: 1356
+        height: 397
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce34a6147c202284199a19ffd96e69bf
+      internalID: -1962956917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOTONES_52
+      rect:
+        serializedVersion: 2
+        x: 1731
+        y: 178
+        width: 1080
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cee36db5eb905c04988bf92848bcb621
+      internalID: -813298509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOTONES_53
+      rect:
+        serializedVersion: 2
+        x: 3417
+        y: 398
+        width: 965
+        height: 295
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f5f67fe620fc624aa954aa2d31300b6
+      internalID: -584996637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOTONES_57
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 89
+        width: 1360
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fb0205b5acfbfa48a32f16405b5e080
+      internalID: 476584117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 1d37719c39c23b84e8ebcb43fe8d2434
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      BOTONES_0: 1852553326
+      BOTONES_1: 1689362019
+      BOTONES_10: -1311432794
+      BOTONES_11: 1103367606
+      BOTONES_12: -243800132
+      BOTONES_13: 1991502329
+      BOTONES_14: 519936343
+      BOTONES_15: -705209297
+      BOTONES_16: 1912385428
+      BOTONES_17: 1642447836
+      BOTONES_18: 1503131641
+      BOTONES_19: 1867435002
+      BOTONES_2: 1009530137
+      BOTONES_20: 2069046690
+      BOTONES_21: 971412635
+      BOTONES_22: -1534166160
+      BOTONES_23: 932368700
+      BOTONES_24: -1520375393
+      BOTONES_25: 737916378
+      BOTONES_26: 390102179
+      BOTONES_27: -418314589
+      BOTONES_28: -686024444
+      BOTONES_29: -1244419199
+      BOTONES_3: 129565939
+      BOTONES_30: -373046695
+      BOTONES_31: -2012133080
+      BOTONES_32: 550057546
+      BOTONES_33: -1923788401
+      BOTONES_34: 1643062500
+      BOTONES_35: -999185210
+      BOTONES_36: 16344418
+      BOTONES_37: 1435295690
+      BOTONES_38: -501160621
+      BOTONES_39: 1164302537
+      BOTONES_4: 2121258728
+      BOTONES_40: -1986206608
+      BOTONES_41: -2074501999
+      BOTONES_42: -2059134418
+      BOTONES_43: -1914056579
+      BOTONES_44: -959248296
+      BOTONES_45: 1068007291
+      BOTONES_46: -1834193192
+      BOTONES_47: 581151735
+      BOTONES_48: -1066348894
+      BOTONES_49: -339405527
+      BOTONES_5: 1582994855
+      BOTONES_50: -1962956917
+      BOTONES_51: 1809684766
+      BOTONES_52: -813298509
+      BOTONES_53: -584996637
+      BOTONES_54: 1769075742
+      BOTONES_55: -1705145819
+      BOTONES_56: 192184691
+      BOTONES_57: 476584117
+      BOTONES_58: -1844007794
+      BOTONES_59: -1640572028
+      BOTONES_6: 172420861
+      BOTONES_60: -1172138639
+      BOTONES_61: -169177655
+      BOTONES_62: 2035193980
+      BOTONES_63: -194664843
+      BOTONES_7: -1168253406
+      BOTONES_8: 1671047748
+      BOTONES_9: 196220789
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

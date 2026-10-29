@@ -1,7 +1,7 @@
 using System.Collections;
 using UnityEngine;
 
-[RequireComponent(typeof(Rigidbody))]
+/*[RequireComponent(typeof(Rigidbody))]
 public class EnemyMove : MonoBehaviour
 {
     [SerializeField, Min(0f)] float detectionRange = 10f;
@@ -14,6 +14,7 @@ public class EnemyMove : MonoBehaviour
     Rigidbody body;
     Transform player;
     PlayerHP playerHP;
+    float baseMovementSpeed;
     bool isGrounded = true;
     bool isAttacking;
     float nextAttackTime;
@@ -21,6 +22,28 @@ public class EnemyMove : MonoBehaviour
     void Awake()
     {
         body = GetComponent<Rigidbody>();
+        baseMovementSpeed = movementSpeed;
+    }
+
+    void OnEnable()
+    {
+        KillCounter.KillCountChanged += UpdateSpeedForKillCount;
+    }
+
+    void OnDisable()
+    {
+        KillCounter.KillCountChanged -= UpdateSpeedForKillCount;
+    }
+
+    void Start()
+    {
+        UpdateSpeedForKillCount(KillCounter.Kills);
+    }
+
+    void UpdateSpeedForKillCount(int killCount)
+    {
+        int speedTier = killCount / 15;
+        movementSpeed = baseMovementSpeed * (1f + speedTier * 0.5f);
     }
 
     void Update()
@@ -107,6 +130,7 @@ public class EnemyMove : MonoBehaviour
         }
 
         isAttacking = false;
+        StopCoroutine(JumpAndAttack());
     }
 
     void OnCollisionStay(Collision collision)
@@ -181,5 +205,97 @@ public class EnemyMove : MonoBehaviour
         UnityEditor.Handles.color = color;
         UnityEditor.Handles.Label(center + new Vector3(radius, 0f, 0f), $"{label}: {radius:0.##}");
 #endif
+    }
+}*/
+
+public class EnemyIA:MonoBehaviour
+{
+    Transform playerTransform;
+    PlayerHP playerHealth;
+    public float cooldownTimer = 2.5f;
+    [SerializeField] bool attackWasSucces;
+    [SerializeField]float distanceToPlayer;
+    public float velocity = 1.5f;
+    public float force = 1.5f;
+    Rigidbody enemyRigidbody;
+    public enum EnemyState
+    {
+        Waiting, Following, Attacking
+    }
+    public EnemyState enemyState;
+    void Start()
+    {
+        playerTransform = GameObject.FindWithTag("Player").transform;
+        playerHealth = FindAnyObjectByType<PlayerHP>();
+        enemyState = EnemyState.Waiting;
+        enemyRigidbody = GetComponent<Rigidbody>();
+        attackWasSucces = false;
+    }
+    void Update()
+    {
+        switch (enemyState)
+        {
+            case EnemyState.Waiting:
+                //Reproducir IDLE enemigo
+            break;
+        
+            case EnemyState.Following:
+
+                Vector3 followPoint = new Vector3(playerTransform.position.x, transform.position.y, playerTransform.position.z);
+
+                transform.position = Vector3.Lerp(transform.position, followPoint, velocity*Time.deltaTime);
+                transform.LookAt(playerTransform);
+
+            break;
+        
+            case EnemyState.Attacking:
+
+                enemyRigidbody.AddForce(Vector3.forward * force, ForceMode.Impulse);
+                enemyRigidbody.AddForce(Vector3.up * force, ForceMode.Impulse);
+                transform.LookAt(playerTransform);
+                enemyState = EnemyState.Following;
+            break;
+
+        }
+        if(attackWasSucces && cooldownTimer > 0)
+        {
+            cooldownTimer -= Time.deltaTime;
+        }
+
+        if(attackWasSucces && cooldownTimer <= 0)
+        {
+            attackWasSucces = false;
+            cooldownTimer= 2.5f;
+            enemyState = EnemyState.Waiting;
+        }
+    }
+    void FixedUpdate()
+    {
+        distanceToPlayer = Vector3.Distance(playerTransform.position, transform.position);
+      if(cooldownTimer != 0)
+        {
+            if(distanceToPlayer <= 30f && distanceToPlayer >= 10f)
+            {
+                enemyState = EnemyState.Following;
+            }
+            else if (distanceToPlayer <= 10f)
+            {
+                enemyState = EnemyState.Attacking;
+            }
+            else
+            {
+                enemyState = EnemyState.Waiting;
+            }
+        }
+    }
+
+    void OnCollisionEnter(Collision collision)
+    {
+        if(collision.gameObject.CompareTag("Player") && enemyState == EnemyState.Attacking && !attackWasSucces)
+        {
+            playerHealth.TakeDamage(1f);
+            attackWasSucces = true;
+        }
+
     }
 }
