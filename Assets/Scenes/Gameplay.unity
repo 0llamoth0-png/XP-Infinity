@@ -2961,6 +2961,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sphere
       objectReference: {fileID: 0}
+    - target: {fileID: 6881709531938058356, guid: c7013d462331259419ce3d1589e0e4c7, type: 3}
+      propertyPath: attackRange
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

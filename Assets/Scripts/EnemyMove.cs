@@ -215,6 +215,7 @@ public class EnemyIA:MonoBehaviour
     public float cooldownTimer = 2.5f;
     [SerializeField] bool attackWasSucces;
     [SerializeField]float distanceToPlayer;
+    [SerializeField] float attackRange = 14f;
     public float velocity = 1.5f;
     public float force = 1.5f;
     Rigidbody enemyRigidbody;
@@ -250,10 +251,12 @@ public class EnemyIA:MonoBehaviour
         
             case EnemyState.Attacking:
 
-                enemyRigidbody.AddForce(Vector3.forward * force, ForceMode.Impulse);
-                enemyRigidbody.AddForce(Vector3.up * force, ForceMode.Impulse);
                 transform.LookAt(playerTransform);
-                enemyState = EnemyState.Following;
+                if (!attackWasSucces)
+                {
+                    playerHealth.TakeDamage(1f);
+                    attackWasSucces = true;
+                }
             break;
 
         }
@@ -274,13 +277,13 @@ public class EnemyIA:MonoBehaviour
         distanceToPlayer = Vector3.Distance(playerTransform.position, transform.position);
       if(cooldownTimer != 0)
         {
-            if(distanceToPlayer <= 30f && distanceToPlayer >= 10f)
-            {
-                enemyState = EnemyState.Following;
-            }
-            else if (distanceToPlayer <= 10f)
+            if(distanceToPlayer <= attackRange)
             {
                 enemyState = EnemyState.Attacking;
+            }
+            else if(distanceToPlayer <= 30f)
+            {
+                enemyState = EnemyState.Following;
             }
             else
             {
