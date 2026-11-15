@@ -35,6 +35,7 @@ public class KillCounter : MonoBehaviour
     public void RegisterKill()
     {
         kills++;
+        RecordMasAlto.RegisterKills(kills);
         KillCountChanged?.Invoke(kills);
     }
 

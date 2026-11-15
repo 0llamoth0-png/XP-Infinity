@@ -3,6 +3,11 @@ using UnityEngine;
 public class EnemyHP : MonoBehaviour
 {
     [SerializeField, Min(1)] int vida = 1;
+    [Header("Sonidos")]
+    [SerializeField] AudioClip deathClip;
+    [SerializeField, Range(0f, 1f)] float deathVolume = 1f;
+    [SerializeField] AudioClip hitClip;
+    [SerializeField, Range(0f, 1f)] float hitVolume = 1f;
 
     int baseVida;
     int vidaMaxima;
@@ -48,6 +53,7 @@ public class EnemyHP : MonoBehaviour
         vida = Mathf.Max(0, vida - cantidad);
         if (vida == 0)
         {
+            PlaySound(deathClip, deathVolume);
             isDead = true;
             if (KillCounter.Instance != null)
             {
@@ -59,6 +65,17 @@ public class EnemyHP : MonoBehaviour
             }
 
             Destroy(gameObject);
+            return;
+        }
+
+        PlaySound(hitClip, hitVolume);
+    }
+
+    void PlaySound(AudioClip clip, float volume)
+    {
+        if (clip != null)
+        {
+            AudioSource.PlayClipAtPoint(clip, transform.position, volume);
         }
     }
 

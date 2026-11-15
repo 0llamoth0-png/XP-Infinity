@@ -370,6 +370,7 @@ GameObject:
   - component: {fileID: 270503325}
   - component: {fileID: 270503324}
   - component: {fileID: 270503323}
+  - component: {fileID: 270503326}
   m_Layer: 5
   m_Name: Scrollbar
   m_TagString: Untagged
@@ -484,6 +485,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 270503321}
   m_CullTransparentMesh: 1
+--- !u!114 &270503326
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 270503321}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e580e710a0d9d74693928ee95afb355, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  volumeScrollbar: {fileID: 270503323}
 --- !u!1 &284502610
 GameObject:
   m_ObjectHideFlags: 0
@@ -1359,6 +1373,7 @@ GameObject:
   - component: {fileID: 590968686}
   - component: {fileID: 590968685}
   - component: {fileID: 590968689}
+  - component: {fileID: 590968690}
   m_Layer: 5
   m_Name: TitleCanvas
   m_TagString: Untagged
@@ -1466,6 +1481,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb77ef12e88188048b6e3287a10d01ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &590968690
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 590968684}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23b40408d0128d04ea613d098430e476, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fontSize: 28
+  screenMargin: 20
 --- !u!1 &621166451
 GameObject:
   m_ObjectHideFlags: 0
@@ -3367,31 +3396,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2ded84714a06b1b40ae7b8cbfce81183, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1287.24
+      value: -1288.07
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2ded84714a06b1b40ae7b8cbfce81183, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -14.1
+      value: -14.46
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2ded84714a06b1b40ae7b8cbfce81183, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 377.7544
+      value: 376.61
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2ded84714a06b1b40ae7b8cbfce81183, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.10837767
+      value: 0.10105643
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2ded84714a06b1b40ae7b8cbfce81183, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2ded84714a06b1b40ae7b8cbfce81183, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.9941098
+      value: 0.99488074
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2ded84714a06b1b40ae7b8cbfce81183, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2ded84714a06b1b40ae7b8cbfce81183, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -3399,7 +3428,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2ded84714a06b1b40ae7b8cbfce81183, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 167.556
+      value: 168.4
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2ded84714a06b1b40ae7b8cbfce81183, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -3454,25 +3483,13 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 2ded84714a06b1b40ae7b8cbfce81183, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1404723212}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 2ded84714a06b1b40ae7b8cbfce81183, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 1404723211}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 2ded84714a06b1b40ae7b8cbfce81183, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1404723210}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 2ded84714a06b1b40ae7b8cbfce81183, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1404723209}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 2ded84714a06b1b40ae7b8cbfce81183, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1404723208}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 2ded84714a06b1b40ae7b8cbfce81183, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1404723207}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 2ded84714a06b1b40ae7b8cbfce81183, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1404723206}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 2ded84714a06b1b40ae7b8cbfce81183, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1404723205}
@@ -3567,19 +3584,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 84
   m_CollisionDetection: 0
---- !u!114 &1404723206
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1404723201}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb5d24bfc687bc4bb2fb4da8aabe4d3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  shield: {fileID: 0}
 --- !u!114 &1404723207
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3605,7 +3609,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1404723201}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e82d307fba1932544bbfb7858850a871, type: 3}
   m_Name: 
@@ -3660,38 +3664,6 @@ MonoBehaviour:
     m_SingletonActionBindings: []
     m_Flags: 0
     m_Priority: 0
---- !u!114 &1404723209
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1404723201}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ad26c8bed5eb89d4fbbbaef4fd3fee9e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  vida: 3
-  heartSprites:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
---- !u!114 &1404723210
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1404723201}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e3ae59957cd9fd3438ff2ae006741f2e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  duration: 0.5
-  speed: 40
-  cooldown: 1
 --- !u!114 &1404723211
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3706,33 +3678,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inputs: {fileID: 1404723208}
   movement: {fileID: 1404723207}
-  playerDash: {fileID: 1404723210}
-  playerAttack: {fileID: 1404723212}
-  playerHP: {fileID: 1404723209}
+  playerDash: {fileID: 0}
+  playerAttack: {fileID: 0}
+  playerHP: {fileID: 0}
   ItemGet:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &1404723212
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1404723201}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 989a684632aa10c4594de187ed27d727, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  attackCooldown: 0.25
-  projectileSpeed: 25
-  projectileRange: 35
-  projectileSize: 0.6
-  enemyLayer:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  shootClip: {fileID: 0}
-  source: {fileID: 0}
 --- !u!95 &1404723213
 Animator:
   serializedVersion: 7

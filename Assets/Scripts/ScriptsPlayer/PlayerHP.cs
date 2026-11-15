@@ -25,7 +25,6 @@ public class PlayerHP : MonoBehaviour
         }
 
         vida = Mathf.Max(0f, vida - cantidad);
-        Debug.Log("Player took damage. Current HP: " + vida);
         playerDamaged?.Invoke();
         if (vida == 0f)
         {

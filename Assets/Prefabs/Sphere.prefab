@@ -111,8 +111,8 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Radius: 0.9043266
+  m_Center: {x: 0.0000000022145277, y: 0.101930946, z: 0.08891189}
 --- !u!114 &770754010612221585
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -126,6 +126,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   vida: 1
+  deathClip: {fileID: 8300000, guid: 0dbf306f0f9b49e498bb89b8fe23bf5d, type: 3}
+  deathVolume: 1
+  hitClip: {fileID: 8300000, guid: d2d9f4579a092e94e94c69eb09cfc001, type: 3}
+  hitVolume: 1
 --- !u!54 &9158169312753612254
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -167,7 +171,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cooldownTimer: 2.5
   attackWasSucces: 0
-  distanceToPlayer: 5
+  distanceToPlayer: 30
   velocity: 1.2
   force: 1
   enemyState: 0
@@ -184,6 +188,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   vida: 1
+  deathClip: {fileID: 8300000, guid: 0dbf306f0f9b49e498bb89b8fe23bf5d, type: 3}
+  deathVolume: 1
+  hitClip: {fileID: 8300000, guid: d2d9f4579a092e94e94c69eb09cfc001, type: 3}
+  hitVolume: 1
 --- !u!1001 &4550444321280862886
 PrefabInstance:
   m_ObjectHideFlags: 0
